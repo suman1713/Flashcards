@@ -2,14 +2,13 @@ var inquirer = require("inquirer");
 var BasicCard = require("./basic.js");
 var ClozeCard = require("./cloze.js");
 
-//inquirer prompt user -> answer -> switch and select by case
 function askUser() {
     inquirer.prompt([
         {
-            type: "list", //list options
-            message: "CHOOSE YOUR CARD", //CLI prompt	
-            choices: ["BASIC CARD", "CLOZE CARD", "QUIT"], //options
-            name: "askUser" //ref object name
+            type: "list", 
+            message: "CHOOSE YOUR CARD", 
+            choices: ["BASIC CARD", "CLOZE CARD", "QUIT"], 
+            name: "askUser"   
         }
     ]).then(function (answer) {
       var waitMsg;
@@ -41,9 +40,9 @@ function askUser() {
       inquirer.prompt([
           { 
             type: "list",
-            message: "Who was the first president of the United States?", //CLI prompt for front and back args.	
-            choices: ["John Adams", "Thomas Jefferson", "George Washington", "James Madison"], //options
-            name: "card_basic" //ref object name
+            message: "Who was the first president of the United States?", 	
+            choices: ["John Adams", "Thomas Jefferson", "George Washington", "James Madison"], 
+            name: "card_basic" 
           }
       ]).then(
         function (data) {
@@ -68,9 +67,9 @@ function card_cloze() {
    inquirer.prompt([
     { 
       type: "list",
-      message: "...was the first president of the United States?", //CLI prompt for front and back args.	
-            choices: ["John Adams", "Thomas Jefferson", "George Washington", "James Madison"], //options
-      name: "card_cloze" //ref object name
+      message: "...was the first president of the United States?", 	
+            choices: ["John Adams", "Thomas Jefferson", "George Washington", "James Madison"], 
+      name: "card_cloze" 
     }
 ]).then(
   function (data) {
