@@ -1,0 +1,26 @@
+{
+  "name": "flashcard",
+  "version": "1.0.0",
+  "description": "API to create two types of dlashcards.",
+  "main": "flashcards.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suman1713/Flashcards.git"
+  },
+  "keywords": [
+    "ku",
+    "flashcards"
+  ],
+  "author": "Suman Shrestha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suman1713/Flashcards/issues"
+  },
+  "homepage": "https://github.com/suman1713/Flashcards#readme",
+  "dependencies": {
+    "inquirer": "^3.2.3"
+  }
+}
